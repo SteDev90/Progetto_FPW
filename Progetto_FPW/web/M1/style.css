@@ -8,3 +8,28 @@ and open the template in the editor.
     Author     : paste
 */
 
+body {
+    background-color: white;
+}
+
+header {
+    background-color: #063971;
+}
+
+nav {
+    background-color: #063971;
+}
+h1 {
+    color: white;
+    font-size: 30px;
+}
+
+h2 {
+    color: white;
+    font-size: 24px;
+}
+
+h3 {
+    color: white;
+    font-size: 20px;
+}
