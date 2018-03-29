@@ -10,14 +10,29 @@ and open the template in the editor.
 
 body {
     background-color: white;
+    
 }
 
 header {
     background-color: #063971;
+    width: 90%;
+    height: 30%;
 }
 
-nav {
+#navMenuSuperioreav {
     background-color: #063971;
+    float: left;
+    
+}
+
+#navMenuSinistro {
+    background-color: #063971;
+    width: 30%;
+    height: 70%;
+}
+
+li {
+    list-style-type: none;
 }
 h1 {
     color: white;
