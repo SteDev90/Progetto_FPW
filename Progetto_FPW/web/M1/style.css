@@ -8,43 +8,62 @@ and open the template in the editor.
     Author     : paste
 */
 
+/*
+ * Imposto lo stile per il body
+ */
 body {
     background-color: white;
-    
+    margin: 0.5%;
 }
 
-header {
-    background-color: #063971;
-    width: 90%;
-    height: 30%;
-}
-
-#navMenuSuperioreav {
-    background-color: #063971;
-    float: left;
+#navMenuSuperiore {
+    overflow: hidden;
+    background-color: #29487d;
+    border-style:groove;
+    display: block;
     
+}
+#navMenuSuperiore a{
+    float: left;    /* Addosso gli elementi a sinistra */            
+    display:inline;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    border-style: groove;
+    border-color: red; 
+}
+#navMenuSuperiore a:hover {
+    background-color: #ddd;
+    color: black;
+}
+#navMenuSinistro ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px;
+    color: white;
+    text-align: left;
+    border-style: groove;
+    border-color: red;
 }
 
 #navMenuSinistro {
-    background-color: #063971;
-    width: 30%;
-    height: 70%;
-}
-
-li {
-    list-style-type: none;
-}
-h1 {
-    color: white;
-    font-size: 30px;
+    background-color: #29487d;
+    width: 200px;
+    text-align: center;
+    display: block;
 }
 
 h2 {
     color: white;
-    font-size: 24px;
+    border-style: groove;
+    border-color: red;
 }
 
-h3 {
-    color: white;
-    font-size: 20px;
+article img{
+    float: left;
+    position: relative;
+    top:5%;
+    left:20%;
+    float: left;
 }

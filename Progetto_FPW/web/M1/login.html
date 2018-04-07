@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<div><!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
 To change this template file, choose Tools | Templates
@@ -11,25 +11,91 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Pili Anacleto Stefano">
         <meta name="description" content="Pagina di login al sito">
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <!--<link rel="stylesheet" type="text/css" href="style.css">-->
     </head>
     <body>
+        <!-- 
+        Sezione header che contiene la sezione di navigazione superiore 
+        della pagina del sito con i collegamenti principali
+        -->
         <header>
+            <a href="index.html" target="_blank">FAST WRITER PRESS</a>
             <nav id="navMenuSuperiore">
-                <ul>
-                    <li>FAST WRITER PRESS</li>
-                    <li>Notizie</li>
-                    <li>Login</li>
-                </ul>
-                
+                <a href="notizie.html" target="_blank">Notizie</a>
+                <a href="login.html" target="_blank">Login</a>
             </nav>
-        </header> 
+        </header>
+        
+        <!-- 
+        Sezione nav nella parte sinistra del sito che contiene i 
+        collegamenti secondari, quali barra di ricerca, categoria
+        degli articoli e autori articoli
+        -->
         <nav id="navMenuSinistro">
+            <h2>Cerca</h2>
+            <form>
+                <label for="Cerca"></label>
+                <input type="text" name="corto" id="cerca" value="Cerca qualcosa"/>
+            </form>
+            <h2>Categoria</h2>
+            <!-- 
+            Creo la lista delle categorie degli articoli
+            -->
             <ul>
-                <li>Cerca</li>
-                <li>Categorie</li>
-                <li>Autori</li>    
-            </ul>    
-        </nav>
+                <li>
+                    <a href="#" target="_blank">Cronaca</a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">Cultura</a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">Economia</a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">Esteri</a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">Sport</a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">Politica</a>
+                </li>
+            </ul>
+            <!-- 
+            Creo la lista degli autori degli articoli
+            -->
+            <h2>Autori</h2> 
+            <ul>
+                <li>
+                    <img title="immagineProfilo" alt="immagineProfilo" src="" width="50" height="50">
+                    <a href="#" target="_blank">Mario Rossi</a>
+                </li>
+                <li>
+                    <img title="immagineProfilo" alt="immagineProfilo" src="" width="50" height="50">
+                    <a href="#" target="_blank">Giuseppe Verdi</a>
+                </li>
+                <li>
+                    <img title="immagineProfilo" alt="immagineProfilo" src="" width="50" height="50">
+                    <a href="#" target="_blank">Francesco Gialli</a>
+                </li>
+            </ul>
+        </nav>    
+        
+        <!--
+        Sezione del sito contenente il form per il login al sito da parte degli utenti
+        -->
+        <div id="loginProfile">
+            <img title="logo" alt="logoSito" src="Immagini/logo.jpg" width="100" height="100">
+            <h3>FAST WRITER PRESS</h3>
+            <div id="formLogin">
+                <form action="pagina.php" method="get">
+                    <label for="nomeUtente">Nome Utente</label>
+                    <input type="text" name="nomeUtente" id="nomeUtente" value="Nome Utente">
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password" value="password">
+                    <button type="submit">Accedi</button>
+                </form>
+            </div>
+        </div>   
     </body>
 </html>

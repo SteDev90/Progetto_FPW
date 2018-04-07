@@ -11,9 +11,90 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Pili Anacleto Stefano">
         <meta name="description" content="Pagina con la lista delle notizie">
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <!--<link rel="stylesheet" type="text/css" href="style.css">-->
     </head>
     <body>
-        <div>TODO write content</div>
+        <!-- 
+        Sezione header che contiene la sezione di navigazione superiore 
+        della pagina del sito con i collegamenti principali
+        -->
+        <header>
+            <a href="index.html" target="_blank">FAST WRITER PRESS</a>
+            <nav id="navMenuSuperiore">
+                <a href="notizie.html" target="_blank">Notizie</a>
+                <a href="profilo.html" target="_blank">Profilo</a>
+            </nav>
+            <h3>Ciao Utente</h3>
+            <button type="submit">Logout</button>
+        </header>
+        
+        <!-- 
+        Sezione nav nella parte sinistra del sito che contiene i 
+        collegamenti secondari, quali barra di ricerca, categoria
+        degli articoli e autori articoli
+        -->
+        <nav id="navMenuSinistro">
+            <h2>Cerca</h2>
+            <form>
+                <label for="Cerca"></label>
+                <input type="text" name="corto" id="cerca" value="Cerca qualcosa"/>
+            </form>
+            <h2>Categoria</h2>
+            <!-- 
+            Creo la lista delle categorie degli articoli
+            -->
+            <ul>
+                <li>
+                    <a href="#" target="_blank">Cronaca</a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">Cultura</a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">Economia</a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">Esteri</a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">Sport</a>
+                </li>
+                <li>
+                    <a href="#" target="_blank">Politica</a>
+                </li>
+            </ul>
+            <!-- 
+            Creo la lista degli autori degli articoli
+            -->
+            <h2>Autori</h2> 
+            <ul>
+                <li>
+                    <img title="immagineProfilo" alt="immagineProfilo" src="" width="50" height="50">
+                    <a href="#" target="_blank">Mario Rossi</a>
+                </li>
+                <li>
+                    <img title="immagineProfilo" alt="immagineProfilo" src="" width="50" height="50">
+                    <a href="#" target="_blank">Giuseppe Verdi</a>
+                </li>
+                <li>
+                    <img title="immagineProfilo" alt="immagineProfilo" src="" width="50" height="50">
+                    <a href="#" target="_blank">Francesco Gialli</a>
+                </li>
+            </ul>
+        </nav>    
+        
+        <!--
+        Sezione del sito contenente il form per il login al sito da parte degli utenti
+        -->
+        <article>
+            <h1>TITOLO DELL'ARTICOLO</h1>
+            <section id="infoArticolo">
+                <img title="immagineArticolo" alt="immagineArticolo" src="" width="300" height="300">
+                <p>NomeAutore, data</p>
+                <p>TipologiaArticolo</p>
+            </section>
+            <h3>Sottotiolo articolo</h3>
+            <p>Testo dell'articolo</p>
+        </article>   
     </body>
 </html>
